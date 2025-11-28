@@ -26,25 +26,12 @@
             <div class="footer-column shop-column">
                 <h4 class="footer-title"><?php esc_html_e('Shop', 'shoewear'); ?></h4>
                 <?php
-                if (has_nav_menu('footer-shop')) {
-                    wp_nav_menu(array(
-                        'theme_location' => 'footer-shop',
-                        'menu_class' => 'footer-menu',
-                        'container' => false,
-                        'fallback_cb' => false,
-                    ));
-                } else {
-                    ?>
-                    <ul class="footer-menu">
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Women</a></li>
-                        <li><a href="#">Kids</a></li>
-                        <li><a href="#">New Arrivals</a></li>
-                        <li><a href="#">Best Sellers</a></li>
-                        <li><a href="#">Sale</a></li>
-                    </ul>
-                    <?php
-                }
+                wp_nav_menu(array(
+                    'theme_location' => 'footer-shop',
+                    'menu_class' => 'footer-menu',
+                    'container' => false,
+                    'fallback_cb' => false,
+                ));
                 ?>
             </div>
 
@@ -52,25 +39,12 @@
             <div class="footer-column support-column">
                 <h4 class="footer-title"><?php esc_html_e('Customer Support', 'shoewear'); ?></h4>
                 <?php
-                if (has_nav_menu('footer-support')) {
-                    wp_nav_menu(array(
-                        'theme_location' => 'footer-support',
-                        'menu_class' => 'footer-menu',
-                        'container' => false,
-                        'fallback_cb' => false,
-                    ));
-                } else {
-                    ?>
-                    <ul class="footer-menu">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Order Tracking</a></li>
-                        <li><a href="#">Shipping Info</a></li>
-                        <li><a href="#">Size Guide</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">FAQs</a></li>
-                    </ul>
-                    <?php
-                }
+                wp_nav_menu(array(
+                    'theme_location' => 'footer-support',
+                    'menu_class' => 'footer-menu',
+                    'container' => false,
+                    'fallback_cb' => false,
+                ));
                 ?>
             </div>
 
@@ -78,25 +52,12 @@
             <div class="footer-column company-column">
                 <h4 class="footer-title"><?php esc_html_e('Company', 'shoewear'); ?></h4>
                 <?php
-                if (has_nav_menu('footer-company')) {
-                    wp_nav_menu(array(
-                        'theme_location' => 'footer-company',
-                        'menu_class' => 'footer-menu',
-                        'container' => false,
-                        'fallback_cb' => false,
-                    ));
-                } else {
-                    ?>
-                    <ul class="footer-menu">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Sustainability</a></li>
-                        <li><a href="#">Store Locator</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                    <?php
-                }
+                wp_nav_menu(array(
+                    'theme_location' => 'footer-company',
+                    'menu_class' => 'footer-menu',
+                    'container' => false,
+                    'fallback_cb' => false,
+                ));
                 ?>
             </div>
 

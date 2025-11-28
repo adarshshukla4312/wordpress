@@ -111,7 +111,6 @@ img {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    position: relative;
 }
 
 /* Logo */
@@ -174,12 +173,15 @@ img {
     border-bottom: 1px solid var(--color-border);
     padding: var(--spacing-xl) 0;
     display: none;
+    /* Hidden by default */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     z-index: 999;
 }
 
 .main-navigation .nav-menu li:hover .sub-menu {
     display: block;
+    /* Show on hover */
+    /* In a real mega menu, you'd use grid here */
 }
 
 /* Header Icons */
@@ -219,6 +221,15 @@ img {
     display: none;
     background: none;
     border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+/* =========================================
+   Footer Styles
+   ========================================= */
+.site-footer {
     background-color: var(--color-footer-bg);
     color: var(--color-footer-text);
     padding-top: var(--spacing-xxl);
